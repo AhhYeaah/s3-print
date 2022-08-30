@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.997.0",
+    "image-hash": "^4.0.1",
+    "parse-multipart": "^1.0.4"
+  }
+}

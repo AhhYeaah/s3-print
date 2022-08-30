@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap')
+.parallax
+  /* The image used */
+  //background-image: url('https://picsum.photos/1980/860')
+
+  /* Set a specific height */
+  min-height: 575px
+  height: 70vh
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: auto
+
+.parallaxLow
+  /* The image used */
+  //background-image: url('https://picsum.photos/1980/860')
+
+  /* Set a specific height */
+  min-height: 575px
+  height: 70vh
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+
+
+.black-layer 
+    background-color: rgba(0, 0, 0, 0.529)
+    position: absolute
+    opacity: 0
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 575px
+    height: 70vh
+    animation: fadeIn 2s ease-in-out
+    animation-fill-mode: forwards
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: nowrap column
+
+.black-layer-done
+    background-color: rgba(0, 0, 0, 0.529)
+    position: absolute
+    opacity: 1
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 575px
+    height: 70vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: nowrap column
+
+.button
+    animation: fadeIn 2s ease-in-out
+    animation-fill-mode: forwards
+    opacity: 0
+    animation-delay: 3s
+    margin-top: 50px
+    border: 1px solid purple
+    box-shadow: 0 0 0 0.25rem rgb(128 0 128 / 25%)
+    background-color: transparent
+    color: white
+    width: 300px
+    height: 50px 
+    &:hover
+        background-color: purple
+        color: white
+    &:focus
+        box-shadow: 0 0 0 0.35rem rgb(128 0 128 / 25%)
+
+.button-done
+    margin-top: 50px
+    border: 1px solid purple
+    box-shadow: 0 0 0 0.25rem rgb(128 0 128 / 25%)
+    background-color: transparent
+    color: white
+    width: 300px
+    height: 50px    
+    &:hover
+        background-color: purple
+        color: white
+    &:focus
+        box-shadow: 0 0 0 0.35rem rgb(128 0 128 / 25%)
+
+@keyframes fadeIn
+    0%,50%
+        opacity:0
+    100%
+        opacity:1
+
+.typewriter 
+    font-family: 'Be Vietnam Pro', sans-serif 
+    display: inline-block
+    margin-top: 100px
+
+.typewriter-text 
+    display: inline-block
+    overflow: hidden
+    letter-spacing: 2px
+    animation: typing 2s steps(50, end) 
+    animation-delay: 2s
+    width: 0%
+    animation-fill-mode: forwards
+    white-space: nowrap
+    font-size: 4vw  
+    font-weight: 700px
+    border-right: 4px solid orange
+    color: white
+    box-sizing: border-box
+
+.typewriter-text-done
+    display: inline-block
+    letter-spacing: 2px
+    white-space: nowrap
+    font-size: 4vw
+    font-weight: 700px
+    border-right: 4px solid orange
+    color: white
+    box-sizing: border-box
+
+@keyframes typing 
+    from  
+        width: 0% 
+    
+    to  
+        width: 100% 
+
+@keyframes blink 
+    from, to  
+        border-color: transparent 
+    
+    50%  
+        border-color: orange
+    

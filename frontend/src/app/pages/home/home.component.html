@@ -1,0 +1,24 @@
+<div *ngIf="isLoadingState" class="loading">
+    <div class="spinner-border text-light" role="status" style="width: 5em; height: 5em;"></div>
+</div>
+
+<div>
+    <app-parallax></app-parallax>
+    <form 
+        hidden="true" 
+        enctype="multipart/form-data">
+        <input type="file"
+        name="inputFile"
+        id="inputFile"
+        accept="image/*" 
+        multiple="false"
+        (change)="upload($event.target)"
+        />
+    </form>
+    <main style="margin-top: 50px">
+        <div class="container" style="color: white; height: 50vh;">
+            Esse é um site que eu resolvi fazer enquanto começava os meus estudos de aws
+        </div>
+        <div id="pedro" style="background-color: #ffffff">aadasdasdda</div>
+    </main>
+</div>

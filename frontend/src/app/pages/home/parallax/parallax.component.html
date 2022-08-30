@@ -1,0 +1,17 @@
+<div id=parallax [ngClass]="
+        {
+            'parallax': image?.src != '',
+            'parallaxLow': imageBlur.src != ''
+        }
+    " 
+    [style.background-image]="currentImageSrc" 
+    #parallax>
+    <div [ngClass]="{'black-layer': !imageLoaded, 'black-layer-done': imageLoaded}" >
+        <div class ="typewriter">
+            <div [ngClass]="{'typewriter-text': !imageLoaded, 'typewriter-text-done': imageLoaded}">Alguns momentos devem ser compartilhados.</div>
+        </div>
+        <div>
+            <button class="btn" [ngClass]="{'button': !imageLoaded, 'button-done': imageLoaded}" onclick="document.getElementById('inputFile').click()">Compartilhe o seu</button>
+        </div> 
+    </div>
+</div>
